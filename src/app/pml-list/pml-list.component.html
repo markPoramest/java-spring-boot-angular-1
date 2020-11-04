@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-title>Premier League List</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let p of PML">
+        <h3 mat-line><b>Club Name : {{p.clubName}}</b></h3>
+        <h4 mat-line>Rank : {{p.rankTable}}</h4>
+        <h4 mat-line>Coach : {{p.coachName}}</h4>
+        <h4 mat-line>Field : {{p.fieldName}}</h4>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
